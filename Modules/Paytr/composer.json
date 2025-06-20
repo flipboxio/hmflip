@@ -1,0 +1,30 @@
+{
+    "name": "techvillage/paytr",
+    "type": "vrent-module",
+    "description": "",
+    "authors": [
+        {
+            "name": "TechVillage",
+            "email": "support@techvill.org"
+        }
+    ],
+    "contributors": [
+        {
+            "name": "Muhammed Kamrul Hasan",
+            "email": "kamrul.techvill@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Paytr\\": ""
+        }
+    }
+}

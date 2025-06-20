@@ -1,0 +1,14 @@
+{
+    "name": "Paytr",
+    "alias": "paytr",
+    "display_name": "PayTR",
+    "version": "1.0.0",
+    "description": "You are required to configure the webhook. The webhook link is http://your_domain_name/gateway/pay/paytr/payment_webhook.",
+    "gateway": true,
+    "keywords": [],
+    "priority": 0,
+    "providers": [],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

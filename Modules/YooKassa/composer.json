@@ -1,0 +1,27 @@
+{
+    "name": "techvillage/yookassa",
+    "type": "vrent-module",
+    "description": "",
+    "authors": [
+        {
+            "name": "Techvillage",
+            "email": "support@techvill.org"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\YooKassa\\": ""
+        }
+    },
+    "require": {
+        "yoomoney/yookassa-sdk-php": "^3.1"
+    }
+}

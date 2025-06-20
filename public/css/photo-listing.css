@@ -1,0 +1,29 @@
+.modal-content {
+    border-radius: 0 !important;
+}
+/* Limit image width to avoid overflow the container */
+img {
+    max-width: 100% !important;
+}
+
+#canvas {
+    height: 500px;
+    width: 100%;
+    background-color: #ffffff;
+    cursor: default;
+    border: 1px solid black;
+}
+div#result {
+    height: 200px;
+    width: 100% !important;
+    border: 1px solid #1dbf73;
+}
+
+div#result img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.hide {
+    display: none;
+}

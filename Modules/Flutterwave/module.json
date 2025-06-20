@@ -1,0 +1,15 @@
+{
+    "name": "Flutterwave",
+    "alias": "flutterwave",
+    "version": "1.0",
+    "description": "",
+    "keywords": [],
+    "gateway": true,
+    "priority": 0,
+    "providers": [
+        "Modules\\Flutterwave\\Providers\\FlutterwaveServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

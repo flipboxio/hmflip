@@ -1,0 +1,80 @@
+{
+    "addons": [
+        
+        {
+            "name": "DirectBankTransfer",
+            "alias": "directbanktransfer",
+            "description": "DirectBankTransfer is a system where the guest can transfer an amount of money to Admin's Bank Account. and upload the necessary documenta so admin can approve the request of the guest",
+            "image": [
+                "/Modules/DirectBankTransfer/Resources/assets/thumbnail.png"
+            ],
+            "price_type": "premium",
+            "price": "Free",
+            "url": "http://vrent.techvill.org/",
+            "version": "1.0",
+            "require_version": "3.9",
+            "last_update_date": "27-07-2023",
+            "meta": []
+        },
+        {
+            "name": "Paypal",
+            "alias": "paypal",
+            "description": "Whether you’re building an online, mobile or in-person payment solution, you’ll find the resources you need to test and go live with PayPal.",
+            "image": [
+                "/Modules/Paypal/Resources/assets/thumbnail.png"
+            ],
+            "price_type": "premium",
+            "price": "Free",
+            "url": "http://vrent.techvill.org/",
+            "version": "1.0",
+            "require_version": "3.9",
+            "last_update_date": "27-07-2023",
+            "meta": []
+        },
+        {
+            "name": "Paystack",
+            "alias": "paystack",
+            "description": "Paystack is a Nigerian financial technology company that offers payment processing services to businesses and was acquired by Irish-American financial services company Stripe for $200M in 2020. Its headquarters is located in Lagos, ",
+            "image": [
+                "/Modules/Paystack/Resources/assets/thumbnail.png"
+            ],
+            "price_type": "premium",
+            "price": "Free",
+            "url": "http://vrent.techvill.org/",
+            "version": "1.0",
+            "require_version": "3.9",
+            "last_update_date": "27-07-2023",
+            "meta": []
+        },
+        {
+            "name": "Stripe",
+            "alias": "stripe",
+            "description": "Stripe, Inc. is an Irish-American financial services and software as a service company dual-headquartered in South San Francisco, California, United States and Dublin, Ireland",
+            "image": [
+                "/Modules/Stripe/Resources/assets/thumbnail.png"
+            ],
+            "price_type": "premium",
+            "price": "Free",
+            "url": "http://vrent.techvill.org/",
+            "version": "1.0",
+            "require_version": "3.9",
+            "last_update_date": "27-07-2023",
+            "meta": []
+        },
+        {
+            "name": "Flutterwave",
+            "alias": "flutterwave",
+            "description": "Flutterwave is a Nigerian fintech company that provides a payment infrastructure for global merchants and payment service providers across the continent.",
+            "image": [
+                "/Modules/Flutterwave/Resources/assets/thumbnail.png"
+            ],
+            "price_type": "premium",
+            "price": "Free",
+            "url": "http://vrent.techvill.org/",
+            "version": "1.0",
+            "require_version": "3.9",
+            "last_update_date": "27-07-2023",
+            "meta": []
+        }
+    ]
+}

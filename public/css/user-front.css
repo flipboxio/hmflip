@@ -1,0 +1,10 @@
+.icon-click {
+    cursor: pointer;
+}
+.vbtn-outline-success:hover {
+    background: #1dbf73 !important;
+}
+
+.btn-outline-danger:hover {
+    background: #dc3545 !important;
+}

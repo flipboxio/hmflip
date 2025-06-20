@@ -1,0 +1,169 @@
+ /*For top logo position fix*/
+.header_controls{
+	margin-top:0 !important;
+	background-color:none !important;
+	}
+@media (max-width: 767px) {
+	.header_controls{
+		margin-top:-50px !important;
+		background-color:transparent !important;
+		}
+}
+
+a {
+	text-decoration: none;
+}
+.profile-parent .dropdown-toggle::after{
+    display: none;
+}
+.f-12{
+    font-size: 12px;
+}
+.f-14{
+    font-size: 14px;
+    line-height: 1.428;
+}
+.f-18{
+    font-size: 18px;
+}
+.img-circle {
+    border-radius: 50%;
+}
+.date-parent label{
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 6px;
+}
+.date-parent button{
+    font-size: 14px;
+}
+.date-parent .form-control, .date-parent span{
+    font-size: 14px !important;
+}
+.w-60{
+    width: 60px;
+}
+.dataTables_filter{
+    margin-top: -36px;
+}
+.filters-parent .dataTables_filter{
+    margin-top: unset !important;
+}
+.filters-parent .dataTables_length{
+    margin-bottom: 10px !important;
+}
+.dt-responsive >tbody tr td a{
+    padding: 2px 7px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.dt-responsive >tbody tr td a i{
+    font-size: 12px;
+    line-height: 1.5;
+}
+.parent-table .table > tbody > tr > td {
+    border: unset !important;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+.admin-nav>li>a {
+    margin-top: -6px;
+}
+.panel-body {
+    padding: 15px;
+}
+.btn-margin >.dropdown-toggle::after{
+    display: none;
+}
+select{
+    -webkit-appearance: listbox !important
+}
+.panel-primary {
+    border: 1px solid #337ab7;
+}
+.wysihtml5-toolbar .dropdown >.dropdown-menu>li>a {
+    display: block;
+    padding: 0 0 0 20px;
+    font-size: 14px;
+    line-height: 27px;
+}
+ul.wysihtml5-toolbar>li a {
+    font-size: 14px;
+}
+ul.wysihtml5-toolbar {
+    margin: 17px 0 5px 0 !important;
+}
+.dt-responsive >tbody tr td button {
+    padding: 2px 7px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.dt-responsive >tbody tr td button i {
+    font-size: 12px;
+    line-height: 1.5;
+}
+.close {
+    font-size: 21px !important;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    background: unset;
+    border:unset;
+    opacity: 0.2;
+    cursor: pointer;
+}
+.close:hover{
+    color: #2c2c2c;
+}
+.bootstrap-wysihtml5-insert-link-target{
+    margin-left: 0!important;
+}
+@media (min-width: 768px){
+    .form-horizontal .control-label {
+    padding-top: 7px;
+    margin-bottom: 0;
+    text-align: right;
+}
+}
+.nav-tabs-custom>.nav-tabs>li.active {
+    border-top-color: #3c8dbc;
+}
+.nav-tabs > li > a:hover {
+    border-bottom: 1px solid #02a9f4;
+    background: #fff;
+    border-top: 0 none;
+    border-left: 0 none;
+    border-right: 0 none;
+    cursor: pointer;
+}
+.panel{
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+    box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+    border-color: #ddd;
+}
+.panel-default{
+    border-color: #ddd;
+}
+.dTfont {
+    position: absolute !important;
+    bottom: 0 !important;
+}
+.fa-star:before {
+    color: #D1C44C;
+}
+@media screen and (max-width:768px){
+    span.dtr-data {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

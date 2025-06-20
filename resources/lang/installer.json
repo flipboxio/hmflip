@@ -1,0 +1,16 @@
+{
+    "Database connection error": "Database connection error",
+    "We cant connect to database with your settings :": "We cant connect to database with your settings :",
+    "If your are not very sure to understand all these terms you should contact your hoster.": "If your are not very sure to understand all these terms you should contact your hoster.",
+    "Try again !": "Try again !",
+    "Database setting": "Database setting",
+    "If you dont know how to fill this form contact your hoster": "If you dont know how to fill this form contact your hoster",
+    "Database name (where you want your application to be)": "Database name (where you want your application to be)",
+    "Username (Your database login)": "Username (Your database login)",
+    "Password (Your database password)": "Password (Your database password)",
+    "Port": "Port",
+    "Host name (should be localhost, if it doesn't work ask your hoster)": "Host name (should be localhost, if it doesn't work ask your hoster)",
+    "Back": "Back",
+    "Create database": "Create database",
+    "Please wait a moment...": "Please wait a moment..."
+}

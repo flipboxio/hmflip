@@ -1,0 +1,16 @@
+{
+    "name": "Razorpay",
+    "alias": "razorpay",
+    "display_name": "Razorpay",
+    "version": "1.0.0",
+    "gateway": true,
+    "description": "Razorpay is a leading Indian fintech company that provides online payment solutions for businesses, allowing them to accept digital payments securely and efficiently.",
+    "keywords": [],
+    "priority": 12,
+    "providers": [
+        "Modules\\Razorpay\\Providers\\RazorpayServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
