@@ -10,6 +10,7 @@
           <li class="{{ Request::segment(3) == 'pricing' ? 'lnk-active' : '' }}"><a href='{{ $result->status != "" ? url("listing/" . $result->id . "/pricing") : "#" }}'><div class="radius"><span class="margin-top6">6</span></div>{{ __('Pricing') }}</a></li>
           <li class="{{ Request::segment(3) == 'booking' ? 'lnk-active' : '' }}"><a href='{{ $result->status != "" ? url("listing/" . $result->id . "/booking") : "#" }}'><div class="radius"><span class="margin-top6">7</span></div>{{ __('Booking') }}</a></li>
           <li class="{{ Request::segment(3) == 'calendar' ? 'lnk-active' : '' }}"><a href='{{ $result->status != "" ? url("listing/" . $result->id . "/calendar") : "#" }}'><div class="radius"><span class="margin-top6">8</span></div>{{ __('Calender') }}</a></li>
+          <li class="{{ Request::segment(3) == 'lease' ? 'lnk-active' : '' }}"><a href='{{ $result->status != "" ? url("listing/" . $result->id . "/lease") : "#" }}'><div class="radius"><span class="margin-top6">8</span></div>{{ __('Lease Types') }}</a></li>
         </ul>
       </div>
   </div>   

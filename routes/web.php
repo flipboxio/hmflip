@@ -362,7 +362,7 @@ Route::group(['middleware' => ['guest:users', 'locale']], function () {
 	Route::match(array('POST'),'listing/photo/make_photo_serial', 'PropertyController@makePhotoSerial');
 
     Route::match(array('GET', 'POST'),'listing/update_status', 'PropertyController@updateStatus');
-    Route::match(array('GET', 'POST'),'listing/{id}/{step}', 'PropertyController@listing')->where(['id' => '[0-9]+','page' => 'basics|description|location|amenities|photos|pricing|calendar|details|booking']);
+    Route::match(array('GET', 'POST'),'listing/{id}/{step}', 'PropertyController@listing')->where(['id' => '[0-9]+','step' => 'basics|description|location|amenities|photos|pricing|calendar|details|booking|lease']);
 
     // Favourites routes
     Route::get('user/favourite', 'PropertyController@userBookmark');

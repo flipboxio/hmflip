@@ -8,8 +8,8 @@ use App\Http\Controllers\{
     EmailController
 };
 use Illuminate\Http\Request;
-use App\Models\{
-    Favourite,
+use App\Models\{Favourite,
+    LeaseType,
     Properties,
     PropertyDetails,
     PropertyAddress,
@@ -26,8 +26,7 @@ use App\Models\{
     Country,
     Amenities,
     AmenityType,
-    PropertyDates
-};
+    PropertyDates};
 
 class PropertyController extends Controller
 {
@@ -127,6 +126,7 @@ class PropertyController extends Controller
 
     public function listing(Request $request, CalendarController $calendar)
     {
+        dd('asdf');
 
         $step            = $request->step;
         $property_id     = $request->id;
@@ -422,9 +422,19 @@ class PropertyController extends Controller
             }
         } elseif ($step == 'calendar') {
             $data['calendar'] = $calendar->generate($request->id);
-        }
+        } elseif ($step == 'lease') {
+            if ($request->isMethod('post') && is_array($request->lease_types)) {
+                $property = Properties::find($request->id);
+                $property->lease_type = implode(',', $request->lease_types);
+                $property->save();
+                return redirect('listing/' . $property_id . '/basics');
+            }
+            $data['property_leases'] = explode(',', $data['result']->lease_type);
+//            $data['leases'] = LeaseType::where('status', 'Active')->get();
+            $data['lease_types']     = LeaseType::get();
 
-        
+        }
+        dd($data);
         return view("listing.$step", $data);
     }
 

@@ -58,6 +58,7 @@ class DatabaseSeeder extends Seeder
       $this->call(UsersVerificationTableSeeder::class);
       $this->call(WalletsTableSeeder::class);
       $this->call(WithdrawalsTableSeeder::class);
+      $this->call(LeaseTypeTableSeeder::class);
       Artisan::call('module:seed Gateway');
     }
 }

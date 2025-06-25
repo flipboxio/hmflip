@@ -25,7 +25,7 @@ use App\Http\Controllers\Controller;
 use App\DataTables\PropertyDataTable;
 use App\Exports\PropertiesExport;
 use App\Http\Controllers\Admin\CalendarController;
-use App\Models\{
+use App\Models\{LeaseType,
     Properties,
     PropertyDetails,
     PropertyAddress,
@@ -42,8 +42,7 @@ use App\Models\{
     User,
     Settings,
     Bookings,
-    Currency
-};
+    Currency};
 
 class PropertiesController extends Controller
 {
@@ -432,6 +431,40 @@ class PropertiesController extends Controller
             }
         } elseif ($step == 'calender') {
             $data['calendar'] = $calendar->generate($request->id);
+        } elseif ($step == 'lease') {
+            if ($request->isMethod('post') && is_array($request->lease_types)) {
+                $property = Properties::find($request->id);
+                $property->lease_type = implode(',', $request->lease_types);
+                $property->save();
+                return redirect('admin/listing/' . $property_id . '/basics');
+//                $selectedAmenityIds  = Amenities::select('id', 'type_id')->whereIn('id', $request->amenities)->get();
+//                $leaseTypeId = LeaseType::orderby('id', 'asc')->value('id');
+
+//                $leaseTypes = 0;
+//                foreach ($leaseTypeId as $id) {
+//                    if ($id->id == $leaseTypeId) {
+//                        $leaseTypes++;
+//                        break;
+//                    }
+//                }
+
+//                if ($leaseTypes >= 1) {
+//                    $property->lease_type = implode(',', $request->lease_types);
+//                    $property->save();
+//                    return redirect('admin/listing/' . $property_id . '/basics');
+//                } else {
+//                    Common::one_time_message('error', __('Choose at least one item from the Lease Types'));
+//                    return redirect('admin/listing/' . $property_id . '/lease');
+//                }
+
+            } elseif ($request->isMethod('post') && empty($request->amenities)) {
+                Common::one_time_message('error', __('Choose at least one item from the Lease Types'));
+                return redirect('admin/listing/' . $property_id . '/lease');
+            } else {
+                $data['property_leases'] = explode(',', $data['result']->lease_type);
+//                $data['amenities']          = Amenities::where('status', 'Active')->get();
+                $data['lease_types']     = LeaseType::get();
+            }
         }
 
         return view("admin.listing.$step", $data);

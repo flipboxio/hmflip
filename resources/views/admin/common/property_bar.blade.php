@@ -37,6 +37,10 @@
                 <a href='{{ url("admin/listing/$result->id/calender") }}' data-group="profile">Calendar</a>
             </li>
 
+            <li class="{{ ($requestUri == 'lease') ? 'active' : ''  }}">
+                <a href='{{ url("admin/listing/$result->id/lease") }}' data-group="profile">Lease Types</a>
+            </li>
+
         </ul>
     </div>
 </div>
