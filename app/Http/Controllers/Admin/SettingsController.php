@@ -381,10 +381,10 @@ class SettingsController extends Controller
              $data['paypal'] = Common::key_value('name', 'value', $paypal);
              $data['stripe'] = Common::key_value('name', 'value', $stripe);
              $data['countries'] = Country::getAll()->pluck('name','id');
-             if (n_as_k_c()) {
-                Session::flush();
-                return view('vendor.installer.errors.admin');
-            }
+//             if (n_as_k_c()) {
+//                Session::flush();
+//                return view('vendor.installer.errors.admin');
+//            }
 
              return $dataTable->render('admin.settings.payment', $data);
         } elseif ($request['gateway'] == 'paypal') {

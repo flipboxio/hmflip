@@ -16,6 +16,7 @@ class PurchaseChecker implements PurchaseInterface {
         if (env('APP_ENV') !== 'production') {
             return (object) [
                 'status' => true,
+                'old' => true,
                 'data'=> md5(g_d() . 'e9bb27f750f897627caaba162c564334') . '.e9bb27f750f897627caaba162c564334'
             ];
         }

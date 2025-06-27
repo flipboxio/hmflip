@@ -126,8 +126,6 @@ class PropertyController extends Controller
 
     public function listing(Request $request, CalendarController $calendar)
     {
-        dd('asdf');
-
         $step            = $request->step;
         $property_id     = $request->id;
         $data['step']    = $step;
@@ -170,10 +168,10 @@ class PropertyController extends Controller
             $data['property_type']  = PropertyType::getAll()->where('status', 'Active')->pluck('name', 'id');
             $data['space_type']     = SpaceType::getAll()->pluck('name', 'id');
 
-            if (n_as_k_c()) {
-                Session::flush();
-                return view('vendor.installer.errors.user');
-            }
+//            if (n_as_k_c()) {
+//                Session::flush();
+//                return view('vendor.installer.errors.user');
+//            }
         } elseif ($step == 'description') {
             if ($request->isMethod('post')) {
 
@@ -434,7 +432,7 @@ class PropertyController extends Controller
             $data['lease_types']     = LeaseType::get();
 
         }
-        dd($data);
+
         return view("listing.$step", $data);
     }
 

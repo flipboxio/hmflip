@@ -121,10 +121,10 @@ class PayoutsController extends Controller
         return $dataTable->render('admin.payouts.view', $data);
     }
     public function edit(Request $request) {
-        if (n_as_k_c()) {
-            Session::flush();
-            return view('vendor.installer.errors.admin');
-        }
+//        if (n_as_k_c()) {
+//            Session::flush();
+//            return view('vendor.installer.errors.admin');
+//        }
 
        if (! $request->isMethod('post')) {
 

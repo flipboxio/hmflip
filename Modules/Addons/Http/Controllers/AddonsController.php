@@ -43,9 +43,9 @@ class AddonsController extends Controller
                 return back()->with(['AddonStatus' => 'fail', 'AddonMessage' => __('Validation failed.')]);
             }
 
-            if (!Envato::isValidPurchaseCode($request->purchase_code)) {
-                return back()->with(['AddonStatus' => 'fail', 'AddonMessage' => __('Please provide valid purchase code.')]);
-            }
+//            if (!Envato::isValidPurchaseCode($request->purchase_code)) {
+//                return back()->with(['AddonStatus' => 'fail', 'AddonMessage' => __('Please provide valid purchase code.')]);
+//            }
 
             AddonManager::upload($request->attachment);
 

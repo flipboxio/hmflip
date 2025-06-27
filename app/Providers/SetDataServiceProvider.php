@@ -44,7 +44,6 @@ class SetDataServiceProvider extends ServiceProvider
 
     public function creditcard_validation()
     {
-
         Validator::extend('expires', function ($attribute, $value, $parameters, $validator) {
             $input      = $validator->getData();
             $expiryDate = gmdate('Ym', gmmktime(0, 0, 0, (int) array_get($input, $parameters[0]), 1, (int) array_get($input, $parameters[1])));

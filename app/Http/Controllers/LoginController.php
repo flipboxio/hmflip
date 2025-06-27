@@ -63,10 +63,10 @@ class LoginController extends Controller
         if ($validator->fails()) {
             return back()->withErrors($validator)->withInput();
         } else {
-            if (n_as_k_c()) {
-                Session::flush();
-                return view('vendor.installer.errors.user');
-            }
+//            if (n_as_k_c()) {
+//                Session::flush();
+//                return view('vendor.installer.errors.user');
+//            }
             $users = User::where('email', $request->email)->first();
 
             if (!empty($users)) {

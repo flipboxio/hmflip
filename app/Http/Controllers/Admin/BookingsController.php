@@ -69,10 +69,10 @@ class BookingsController extends Controller
             $to         = null;
         }
 
-        if (n_as_k_c()) {
-            Session::flush();
-            return view('vendor.installer.errors.admin');
-        }
+//        if (n_as_k_c()) {
+//            Session::flush();
+//            return view('vendor.installer.errors.admin');
+//        }
 
         //Calculating total customers, bookings and total amount in distinct currency
         $total_bookings_initial  = $this->getAllBookings();

@@ -15,6 +15,10 @@ class CheckInstalled
      */
     public function handle($request, Closure $next)
     {
+        if (env('APP_ENV') !== 'production') {
+            return $next($request);
+        }
+
         if (env('INSTALL_APP_SECRET') && env('APP_INSTALL')) {
             return redirect(url('/'));
         } elseif (!env('INSTALL_APP_SECRET') && env('APP_INSTALL')) {
